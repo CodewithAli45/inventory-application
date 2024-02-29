@@ -26,10 +26,10 @@
   "devDependencies": {},
   "scripts": {
     "client-install": "npm install --prefix views",
-    "start": "node server.js",
-    "server": "nodemon server.js",
+    "start": "nodemon index",
+    "server": "nodemon index.js",
     "client": "npm start --prefix views",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "dev": "concurrently \"npm run index\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix views && npm run build --prefix views"
   },
   "author": "",
